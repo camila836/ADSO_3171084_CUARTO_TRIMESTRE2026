@@ -1,0 +1,33 @@
+class Animal:
+  def sonido(self):
+    pass # No es necesario que la clase padre tenga implementacion si las hijas la sobreescriben
+
+class Perro(Animal):
+  def sonido(self):
+    print("El perro guau guau")
+
+class Gato(Animal):
+  def sonido(self):
+    print("El gato maulla")
+
+class Leon(Animal):
+  def sonido(self):
+    print("El leon ruge")
+
+class Loro(Animal):
+  def sonido(self):
+    print("El loro repite")
+
+#definicion del metodo principal
+def main():
+  perro1 = Perro()
+  perro1.sonido()
+  gato1 = Gato()
+  gato1.sonido()
+  leon1 = Leon()
+  leon1.sonido()
+  loro1 = Loro()
+  loro1.sonido()
+
+if __name__ == "__main__":
+  main()

@@ -1,0 +1,17 @@
+class Vehiculo:
+  # esta clase va a  ser mi clase padre
+  def mover(self): #metodo que se reutiliza en los hijos
+      print("El vehículo se esta moviendo")
+# ahora crear una clase hija
+class Moto(Vehiculo):
+  # reutilizar el metodo mover() de la clase padre
+  pass
+#definicion del metodo principal
+def main():
+    vehiculo1 = Vehiculo()
+    moto1 = Moto()
+    print("Metodo desde la clase vehiculo")
+    moto1.mover()
+
+if __name__ == "__main__":
+  main()

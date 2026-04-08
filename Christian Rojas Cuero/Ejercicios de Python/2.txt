@@ -1,0 +1,19 @@
+class Empleado:
+  def trabajar(self):
+    print("El empleado esta realizando tareas generales")
+    pass
+    class Gerente(Empleado):
+      def trabajar(self):
+        print("El gerente esta coordinando el trabajo")
+    class Vendedor(Empleado):
+      def trabajar(self):
+        print("El vendedor esta vendiendo")
+    #definicion del metodo principal
+      def main():
+        gerente1 = Gerente()
+        gerente1.trabajar()
+        vendedor1 = Vendedor()
+        vendedor1.trabajar()
+
+    if __name__ == "__main__":
+      main()

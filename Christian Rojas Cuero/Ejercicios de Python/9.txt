@@ -1,0 +1,25 @@
+class Opera:
+  def __init__(self, a, b):
+    self.a = a
+    self.b = b
+    print("Inicializando Opera")
+  def calculo(self):
+    print("Calculando Opera")
+
+class Sumar(Opera):
+  def __init__(self, a, b):
+    super().__init__(a, b)
+    print("Preparando opera sumar: ")
+    def calculo(self):
+      return super().calculo()
+      resultados = self.a + self.b
+      print(f"La sumar es: {resultados}")
+
+    def main():
+      num1 = float(input("Ingrese el primer dato: "))
+      num2 = float(input("Ingrese el segundo dato: "))
+      opera1 = Sumar(num1, num2)
+      opera1.calculo()
+
+if __name__ == "__main__":
+  main()

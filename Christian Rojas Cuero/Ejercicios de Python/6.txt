@@ -1,0 +1,33 @@
+class Vehiculo:
+  def accion(self):
+    pass # No es necesario que la clase padre tenga implementacion si las hijas la sobreescriben
+
+class Moto(Vehiculo):
+  def accion(self):
+    print("La moto rueda")
+
+class Carro(Vehiculo):
+  def accion(self):
+    print("El carro se maneja")
+
+class Avion(Vehiculo):
+  def accion(self):
+    print("El avion vuela")
+
+class Submarino(Vehiculo):
+  def accion(self):
+    print("El submarino explora bajo el mar")
+
+#definicion del metodo principal
+def main():
+  moto1 = Moto()
+  moto1.accion()
+  carro1 = Carro()
+  carro1.accion()
+  avion1 = Avion()
+  avion1.accion()
+  submarino1 = Submarino()
+  submarino1.accion()
+
+if __name__ == "__main__":
+  main()
